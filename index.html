@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress</title>
+</head>
+<body>
+    <section class="section1"> 
+        <p id="h">Progress</p>
+    </section>
+    
+    <section class="section2">
+        <div class="ring">
+            <svg id="progress-svg" width="170" height="170">
+                <!-- Основной круг -->
+                <circle class="progress-bg" cx="75" cy="75" r="65" />
+                <!-- Круг прогресса -->
+                <circle id="progress-circle" class="progress" cx="75" cy="75" r="65" />
+            </svg>
+        </div>
+
+        <div class="controls">
+            <form>
+                <!-- Поле Value -->
+                <div class="form-group">
+                    
+                        <input type="number" id="value" min="0" max="100" value="0">
+                        <label for="value">Value</label>
+                   
+                </div>
+
+                <!-- Кнопка Hide -->
+                <div class="form-group">
+                    
+                    <label class="switch">
+                        <input type="checkbox" id="hide">
+                        <span class="slider"></span>
+                    </label>
+                    <label for="hide">Hide</label>
+                </div>
+
+                <!-- Кнопка Animate -->
+                <div class="form-group">
+                    
+                    <label class="switch">
+                        <input type="checkbox" id="animate">
+                        <span class="slider"></span>
+                    </label>
+                    <label for="animate">Animate</label>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
